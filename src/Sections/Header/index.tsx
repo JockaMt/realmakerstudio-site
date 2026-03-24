@@ -10,7 +10,7 @@ function Header() {
     <header className="sticky z-90 top-0 w-full bg-gray-100 shadow-md">
       <div className="flex h-20 items-center justify-center p-4 md:hidden">
         <Sheet open={sheetOpen} onOpenChange={setSheetOpen}>
-          <SheetTrigger className="fixed left-0 p-5 text-gray-800 hover:text-red-800"><MenuIcon size={40}/></SheetTrigger>
+          <SheetTrigger className="fixed left-0 p-5 text-gray-800 hover:text-red-800"><MenuIcon size={40} /></SheetTrigger>
           <SheetContent side='left' className="w-[70%] z-91">
             <SheetHeader className='flex flex-row items-center border-b-2'><div className="w-15"><img src={imglogo} /></div><h1 className="flex absolute w-full flex-1 justify-center font-semibold text-2xl text-gray-700">Real Maker Studio</h1></SheetHeader>
             <nav className="flex flex-col">
@@ -21,7 +21,7 @@ function Header() {
             </nav>
             <SheetFooter className="p-0">
               <div className="flex text-xs items-center justify-center gap-2 border-t-2 py-4">
-                <Copyright size={15}/><p>{new Date().getFullYear()} Real Maker Studio. Todos os direitos reservados.</p>
+                <Copyright size={15} /><p>{new Date().getFullYear()} Real Maker Studio. Todos os direitos reservados.</p>
               </div>
             </SheetFooter>
           </SheetContent>
